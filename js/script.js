@@ -16,3 +16,5 @@ new WOW().init();
 var rellax = new Rellax('.rellax');
 
 $(".youtube-link").grtyoutube();
+
+// $(".sec-4-fittext-title").fitText(1, { minFontSize: '20px', maxFontSize: '36px' });
