@@ -17,4 +17,28 @@ var rellax = new Rellax('.rellax');
 
 $(".youtube-link").grtyoutube();
 
-// $(".sec-4-fittext-title").fitText(1, { minFontSize: '20px', maxFontSize: '36px' });
+/*-----gallery-in-company-page--------*/
+$('.center').slick({
+    centerMode: true,
+    infinite: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    speed: 300,
+    prevArrow: $('.gallery-prev'),
+    nextArrow: $('.gallery-next'),
+    variableWidth: false,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ],
+});
+

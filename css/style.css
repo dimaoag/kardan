@@ -715,9 +715,13 @@ header:before{
 }
 .sec-5-rel-2{
     position: absolute;
-    top: 800px;
-    left: -35px;
-    width: 400px;
+    top: 700px;
+    left: -220px;
+    /*width: 400px;*/
+    height: 500px;
+}
+.sec-5-rel-2 img{
+    height: 100%;
 }
 .sec-5-content{
     margin-top: 70px;
@@ -753,6 +757,38 @@ header:before{
 }
 
 /* --------------- section-6 ---------*/
+
+.gallery img{
+    background: #fff;
+    width: 100%;
+    position: relative;
+    opacity: 0.6;
+    padding: 20px 5px;
+
+}
+.center .slick-center img {
+    opacity: 1;
+    padding: 10px 5px;
+}
+.gallery-controll, .related-controll{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.gallery-prev, .gallery-next, .related-prev, .related-next{
+    color: #933ec5;
+    cursor: pointer;
+}
+.gallery-prev, .related-prev{
+    margin-right: 10px;
+}
+.gallery-next, .related-next{
+    margin-left: 10px;
+}
+
 
 @media all and (max-width: 1199px){
     /*---- section-1 -----*/
