@@ -18,15 +18,57 @@ var rellax = new Rellax('.rellax');
 $(".youtube-link").grtyoutube();
 
 /*-----gallery-in-company-page--------*/
-$('.center').slick({
+// $('.center').slick({
+//     centerMode: true,
+//     infinite: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     speed: 300,
+//     prevArrow: $('.gallery-prev'),
+//     nextArrow: $('.gallery-next'),
+//     variableWidth: false,
+//     autoplay:true,
+//     autoplaySpeed: 2000,
+//     responsive: [
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ],
+// });
+
+// $('.card-1').click(function() {
+//     $( ".card-2" ).hide();
+//     $( ".card-info-1" ).show('slow');
+// });
+// $('.card-info-1 i').click(function() {
+//     $( ".card-info-1" ).hide();
+//     $( ".card-2" ).show('slow');
+// });
+
+//
+// $('.card-1').click(function() {
+//     $( ".card-1" ).hide();
+//     $( ".card-info-1" ).show('slow');
+// });
+// $('.card-info-1 i').click(function() {
+//     $( ".card-info-1" ).hide();
+//     $( ".card-1" ).show('slow');
+// });
+
+$('.teams-wrap').slick({
     centerMode: true,
     infinite: true,
-    centerPadding: '60px',
     slidesToShow: 3,
     speed: 300,
-    prevArrow: $('.gallery-prev'),
-    nextArrow: $('.gallery-next'),
-    variableWidth: false,
+    // prevArrow: $('.gallery-prev'),
+    // nextArrow: $('.gallery-next'),
+    // variableWidth: false,
     autoplay:true,
     autoplaySpeed: 2000,
     responsive: [
@@ -42,3 +84,62 @@ $('.center').slick({
     ],
 });
 
+$('.carousel-team').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    dots: false,
+    items:4,
+    responsive:{
+        0:{
+            items:1
+        },
+        575:{
+            items:2
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1199:{
+            items:4
+        }
+    }
+});
+
+
+
+$('.gallery').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+    if (!e.namespace)  {
+        return;
+    }
+    var carousel = e.relatedTarget;
+    $('.slider-counter').html(carousel.relative(carousel.current()) + 1 + '/' + '<span>'+ carousel.items().length) + '</span>';
+}).owlCarousel({
+    center: true,
+    items:1,
+    loop:true,
+    margin:10,
+    responsive:{
+        767:{
+            items:2
+        }
+    }
+});
+
+owl = $('.gallery').owlCarousel();
+$(".gallery-next").click(function () {
+    owl.trigger('next.owl.carousel');
+});
+$(".gallery-prev").click(function () {
+    owl.trigger('prev.owl.carousel');
+});
+
+
+/*-----open-images-in-popup--------*/
+$('.clip a').magnificPopup({
+    type: 'image'
+    // other options
+});

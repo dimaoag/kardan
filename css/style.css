@@ -744,10 +744,140 @@ header:before{
 .section-6{
     position: relative;
     padding-top: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
+.sec-6-title{
+    font-size: 1.85rem;
+    padding-bottom: 100px;
+}
+.carousel-team-wrap{
+    padding: 0 15px;
+    max-height: 420px;
+}
+
+
+/* --------------- section-7 ---------*/
+
+.sec-7-rel-1{
+    position: absolute;
+    top: 2200px;
+    right: 4%;
+    width: 160px;
+    height: 160px;
+}
+.sec-7-rel-2{
+    position: absolute;
+    top: 3900px;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+}
+
+.section-7{
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.course-gallery{
+    margin: 15px 0;
+    padding-bottom: 30px;
+    position: relative;
+}
+.clip a{
+    display: block;
+    height: 100%;
+    outline: none;
+}
+.gallery a{
+    background: #fff;
+    width: 100%;
+    position: relative;
+    opacity: 0.6;
+    padding: 35px;
+
+}
+.gallery .center a{
+    opacity: 1;
+    padding: 0;
+    margin-top: 17px;
+}
+.gallery-controll-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+.slider-counter span{
+    color: #dddddd;
+}
+.gallery-controll{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.gallery-prev i, .gallery-next i{
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.gallery-prev{
+    margin-right: 10px;
+}
+.gallery-next{
+    margin-left: 10px;
+}
+
+.team-card{
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 390px;
+}
+.team-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+.team-card .team-img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+}
+.team-card:hover .team-img-box{
+    opacity: 0.5;
+}
+.team-img-box img{
+    /*height: 100%;*/
+    width: 100%;
+}
+.team-content{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    bottom: -100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(0deg, #052ab2, transparent);
+    transition: 0.5s;
+}
+.team-card:hover .team-content{
+    bottom: 0;
+}
+.sec-7-text-below-form{
+    font-size: 1.3rem;
+}
+
 @media all and (max-width: 1525px){
-    .rellax-bottom, .rellax-top{
+    .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1{
         display: none;
     }
     .section-3{
@@ -755,40 +885,6 @@ header:before{
         padding-bottom: 80px;
     }
 }
-
-/* --------------- section-6 ---------*/
-
-.gallery img{
-    background: #fff;
-    width: 100%;
-    position: relative;
-    opacity: 0.6;
-    padding: 20px 5px;
-
-}
-.center .slick-center img {
-    opacity: 1;
-    padding: 10px 5px;
-}
-.gallery-controll, .related-controll{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.gallery-prev, .gallery-next, .related-prev, .related-next{
-    color: #933ec5;
-    cursor: pointer;
-}
-.gallery-prev, .related-prev{
-    margin-right: 10px;
-}
-.gallery-next, .related-next{
-    margin-left: 10px;
-}
-
 
 @media all and (max-width: 1199px){
     /*---- section-1 -----*/
@@ -967,8 +1063,13 @@ header:before{
     /*---- section-5 -----*/
 
     /*---- section-6 -----*/
-
+    .sec-6-title{
+        padding-bottom: 50px;
+    }
     /*---- section-7 -----*/
+    .carousel-team-wrap .active{
+        margin-right: 40px!important;
+    }
 
     /*---- section-8 -----*/
 
@@ -1003,7 +1104,9 @@ header:before{
     /*---- section-5 -----*/
 
     /*---- section-6 -----*/
-
+    .carousel-team{
+        margin: 15px;
+    }
     /*---- section-7 -----*/
 
     /*---- section-8 -----*/
