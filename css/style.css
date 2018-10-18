@@ -882,6 +882,11 @@ header:before{
 
 
 /* --------------- section-8 ---------*/
+.section-8{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
 .sec-8-rel-1{
     position: absolute;
     top: 3200px;
@@ -895,11 +900,6 @@ header:before{
     left: 2%;
     width: 200px;
     height: 200px;
-}
-.section-8{
-    position: relative;
-    padding-top: 150px;
-    padding-bottom: 100px;
 }
 .section-8 h4{
     opacity: 0.5;
@@ -917,8 +917,46 @@ header:before{
     justify-content: center;
 }
 
+
+
+/* --------------- section-9 ---------*/
+.section-9{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.sec-9-video img{
+    min-height: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+.sec9-right-block{
+}
+.info{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.info div{
+    padding: 10px 0;
+}
+.map iframe{
+    min-height: 250px;
+    width: 100%;
+}
+.way{
+    display: flex;
+    align-items: center;
+}
+.way a{
+    padding-top: 5px;
+    margin-left: 10px;
+}
+.phone a{
+    color: black;
+}
+
 @media all and (max-width: 1525px){
-    .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1{
+    .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1, .sec-8-rel-1, .sec-8-rel-2{
         display: none;
     }
     .section-3{
@@ -983,6 +1021,13 @@ header:before{
     /*---- section-8 -----*/
 
     /*---- section-9 -----*/
+    .sec-9-video img{
+        min-height: 0;
+        width: 100%;
+    }
+    .map{
+        margin-top: 50px;
+    }
 
     /*---- section-10 -----*/
 }
@@ -1116,6 +1161,12 @@ header:before{
     .auto-logo{
         width: 100%;
     }
+    .sec-8-title{
+        font-size: 1.5rem;
+    }
+    .section-8 h4{
+        font-size: 1.3rem;
+    }
     /*---- section-9 -----*/
 
     /*---- section-10 -----*/
@@ -1147,9 +1198,7 @@ header:before{
     /*---- section-5 -----*/
 
     /*---- section-6 -----*/
-    .carousel-team{
-        margin: 15px;
-    }
+
     /*---- section-7 -----*/
 
     /*---- section-8 -----*/
