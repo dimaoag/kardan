@@ -757,7 +757,11 @@ header:before{
 
 
 /* --------------- section-7 ---------*/
-
+.section-7{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
 .sec-7-rel-1{
     position: absolute;
     top: 2200px;
@@ -767,7 +771,7 @@ header:before{
 }
 .sec-7-rel-2{
     position: absolute;
-    top: 3900px;
+    top: 4200px;
     left: 2%;
     width: 200px;
     height: 200px;
@@ -874,6 +878,43 @@ header:before{
 }
 .sec-7-text-below-form{
     font-size: 1.3rem;
+}
+
+
+/* --------------- section-8 ---------*/
+.sec-8-rel-1{
+    position: absolute;
+    top: 3200px;
+    right: 4%;
+    width: 160px;
+    height: 160px;
+}
+.sec-8-rel-2{
+    position: absolute;
+    top: 4500px;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+}
+.section-8{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.section-8 h4{
+    opacity: 0.5;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+}
+.gallery-sec-8 .clip{
+    box-shadow: 8px 6px 44px 5px rgba(0, 0, 0, 0.07);
+    border: 4px solid rgba(25, 43, 179, 0.19);
+}
+.auto-logo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 @media all and (max-width: 1525px){
@@ -1072,7 +1113,9 @@ header:before{
     }
 
     /*---- section-8 -----*/
-
+    .auto-logo{
+        width: 100%;
+    }
     /*---- section-9 -----*/
 
     /*---- section-10 -----*/
