@@ -959,6 +959,10 @@ header:before{
     color: black;
 }
 
+.bg-modal{
+    background-color: #052ab2!important;
+}
+
 @media all and (max-width: 1525px){
     .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1, .sec-8-rel-1, .sec-8-rel-2{
         display: none;

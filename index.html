@@ -48,7 +48,7 @@
                                     <div class="form-input-wrap">
                                         <input data-mask="callback-catalog-phone" type="text" class="form-input" placeholder="Введите ваш номер" name="phone" required>
                                     </div>
-                                    <button type="submit" class="button form-btn-sec1">Узнай стоимость ремонта</button>
+                                    <button type="submit" class="button form-btn-sec1" data-toggle="modal" data-target="#centralModalSuccess">Узнай стоимость ремонта</button>
                                 </form>
                             </div>
                         </div>
@@ -621,7 +621,44 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Central Modal Medium Success -->
+        <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header bg-modal">
+                        <p class="heading lead"></p>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">x</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <h4>Спасибо за заявку. Наш менеджер в ближайшее время свяжется с вами!</h4>
+                        </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn btn-primary waves-effect" data-dismiss="modal">Закрыть</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Central Modal Medium Success-->
+
     </div>
+
+
 
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/popper.min.js"></script>
