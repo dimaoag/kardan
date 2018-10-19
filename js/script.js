@@ -179,3 +179,53 @@ $('.clip a').magnificPopup({
     type: 'image'
     // other options
 });
+
+
+$('.js-form').each(function(){
+    var $this = $(this);
+    $this.validate({
+        highlight: function(element) {
+            setTimeout(function(){
+                $(element).closest('.b-field').addClass('has-error');
+            }, 100)
+        },
+        unhighlight: function(element) {
+            $(element).closest('.b-field').removeClass('has-error');
+        },
+        onkeyup: false,
+        onclick: false,
+        rules: {
+            Имя: {
+                required: true,
+            },
+            Телефон: {
+                required: true,
+                myphone: true
+            },
+        },
+        messages: {
+            Имя: {
+                required: "Введите имя",
+            },
+            Телефон: {
+                required: "Введите номер телефона"
+            }
+        },
+        submitHandler: function(form) {
+            var phone = $this.find('input').val();
+            $.ajax({
+                url: 'mail_2.php',
+                data: {phone: phone},
+                type: 'post',
+                success: function (res) {
+                    $('.button-modal-open').trigger('click');
+                    $('.js-form input').val('');
+                },
+                error: function () {
+                    alert('Error!')
+                },
+            });
+            return false;
+        },
+    });
+});

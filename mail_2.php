@@ -5,10 +5,10 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 $message = "";
 if ( $method == 'POST' ) {
-    $project_name = "Art Steli";
+    $project_name = "Vin-Kardan";
     $admin_email = "dimaoag@gmail.com";
 //    $admin_email = "tehnotop100@gmail.com";
-    $form_subject = "Заявка с сайта Art Steli";
+    $form_subject = "Заявка с сайта Vin-Kardan";
     $phone_key = 'Телефон';
     $phone_value = '';
     $message = '';

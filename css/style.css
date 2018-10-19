@@ -537,22 +537,31 @@ header:before{
     display: flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
+    align-items: flex-end;
+}
+.form-input-wrap{
+    display: flex;
+    flex-direction: column;
 }
 .form-input{
     background: none;
-    padding: 7px 2px;
+    /*padding: 7px 2px;*/
     outline: none;
     border: none;
     font-family: 'Exo 2.0 Light Italic', Arial, sans-serif;
     color: white;
     white-space: nowrap;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(to left, #0000ff 25%, #0000a0 50%, #00009f 100%) 50% 0%;
-    margin-right: 20px;
-    margin-top: 15px;
+    border-bottom: 2px solid #0000a0;
+    /*border-image: linear-gradient(to left, #0000ff 25%, #0000a0 50%, #00009f 100%) 50% 0%;*/
+    /*margin-right: 20px;*/
+    /*margin-top: 15px;*/
+    box-sizing: border-box;
+    margin-right: 30px;
     border-top: none;
+    width: 300px;
 }
 .button{
+    position: relative;
     border: none;
     outline: none;
     color: white;
@@ -562,6 +571,31 @@ header:before{
     background-image: linear-gradient(-17deg, rgba(26, 26, 91, 0.97) 0%, rgba(0, 0, 159, 0.94) 100%);
     cursor: pointer;
     margin-top: 15px;
+    width: 300px;
+    /*z-index: 3;*/
+}
+.button span{
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+.button:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(140deg, #295c0f 0%, #498c1f 100%);*/
+    transition: opacity 0.5s ease-out;
+    background-color: rgba(0,0,0,0.7);
+    /*z-index: 1;*/
+    opacity: 0;
+    color: white;
+}
+.button:hover:after {
+    opacity: 0.5;
+    color: white;
 }
 .form-btn-sec1{
 
@@ -962,6 +996,9 @@ header:before{
 .bg-modal{
     background-color: #052ab2!important;
 }
+.modal-btn{
+    border: none;
+}
 
 @media all and (max-width: 1525px){
     .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1, .sec-8-rel-1, .sec-8-rel-2{
@@ -1053,6 +1090,9 @@ header:before{
     .header-title-2{
         font-size: 1.3rem;
         text-align: left;
+    }
+    .form-input{
+        margin-right: 0;
     }
     /*---- section-2 -----*/
 
