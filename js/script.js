@@ -115,8 +115,8 @@ $('.gallery-sec-7').on('initialized.owl.carousel changed.owl.carousel', function
     if (!e.namespace)  {
         return;
     }
-    var carousel = e.relatedTarget;
-    $('.slider-counter-sec-7').html(carousel.relative(carousel.current()) + 1 + '/' + '<span>'+ carousel.items().length) + '</span>';
+    var carousel7 = e.relatedTarget;
+    $('.slider-counter-sec-7').html(carousel7.relative(carousel7.current()) + 1 + '/' + '<span>'+ carousel7.items().length) + '</span>';
 }).owlCarousel({
     center: true,
     items:1,
@@ -143,8 +143,8 @@ $('.gallery-sec-8').on('initialized.owl.carousel changed.owl.carousel', function
     if (!e.namespace)  {
         return;
     }
-    var carousel = e.relatedTarget;
-    $('.slider-counter-sec-8').html(carousel.relative(carousel.current()) + 1 + '/' + '<span>'+ carousel.items().length) + '</span>';
+    var carousel8 = e.relatedTarget;
+    $('.slider-counter-sec-8').html(carousel8.relative(carousel8.current()) + 1 + '/' + '<span>'+ carousel8.items().length) + '</span>';
 }).owlCarousel({
     items:4,
     loop:true,
