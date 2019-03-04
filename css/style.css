@@ -465,7 +465,7 @@ header{
     min-height: 100vh;
     position: relative;
     color: white;
-    background: #ffffff url("../images/sec1_bg.png") center center ;
+    background: #ffffff url("../images/sec1_bg.jpg") center center ;
     background-size: cover;
     z-index: 1;
 }
@@ -985,7 +985,7 @@ header:before{
     border: 4px solid rgba(25, 43, 179, 0.19);
 }
 .auto-logo{
-    padding: 10px;
+    padding: 30px 10px 15px 10px;
     display: flex;
     justify-content: center;
 }
